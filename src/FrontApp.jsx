@@ -2,7 +2,6 @@ import { useEffect, useState } from "react"
 import React from 'react'
 import axios from 'axios'
 
-
 const FrontApp = () => {
     const [item,setItem]=useState([])
     const [newitem,setNewitem]=useState('')
