@@ -35,7 +35,7 @@ const FrontApp = () => {
         {item.map(task=>
         <div key={task._id}>
             {task.product}
-            <span><button class="badge square-pill bg-danger" style={{"float": "right","padding":"6px 10px 6px 10px"}} onClick={()=>deleteHandler(task._id)}>x</button></span>
+            <span><button class="badge square-pill bg-danger" style={{"float": "right","padding":"6px 10px 6px 10px"}} onClick={()=>deleteHandler(task._id)}>delX</button></span>
         </div>)}
         
       
