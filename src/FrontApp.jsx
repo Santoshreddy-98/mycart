@@ -26,16 +26,16 @@ const FrontApp = () => {
     }
   return (
     <center>
-    <div class="card" style={{"width": "20rem","marginTop":"10px"}}>
+    <div className="card" style={{"width": "20rem","marginTop":"10px"}}>
     
      <form onSubmit={submitHandler}>
      <input type="text" value={newitem} onChange={(e)=>setNewitem(e.target.value)} placeholder="Add Products"/>
-     <input type='submit' class="btn btn-success" value="submit"/>
+     <input type='submit' className="btn btn-success" value="submit"/>
      </form><br/>
         {item.map(task=>
         <div key={task._id}>
             {task.product}
-            <span><button class="badge square-pill bg-danger" style={{"float": "right","padding":"6px 10px 6px 10px"}} onClick={()=>deleteHandler(task._id)}>delX</button></span>
+            <span><button className="badge square-pill bg-danger" style={{"float": "right","padding":"6px 10px 6px 10px"}} onClick={()=>deleteHandler(task._id)}>delX</button></span>
         </div>)}
         
       
